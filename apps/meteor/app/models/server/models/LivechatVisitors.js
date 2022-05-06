@@ -19,7 +19,7 @@ export class LivechatVisitors extends Base {
 	 * Gets visitor by token
 	 * @param {string} token - Visitor token
 	 */
-	getVisitorByToken(token, options) {
+	getVisitorByToken(token, options = {}) {
 		const query = {
 			token,
 		};
